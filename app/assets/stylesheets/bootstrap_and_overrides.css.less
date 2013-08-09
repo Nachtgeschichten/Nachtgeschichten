@@ -1,0 +1,103 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+// Set the correct sprite paths
+@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
+@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
+
+// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
+@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
+@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
+@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
+@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
+@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
+
+// Font Awesome
+@import "fontawesome/font-awesome";
+
+// Glyphicons
+//@import "twitter/bootstrap/sprites.less";
+
+// Your custom LESS stylesheets goes here
+//
+// Since bootstrap was imported above you have access to its mixins which
+// you may use and inherit here
+//
+// If you'd like to override bootstrap's own variables, you can do so here as well
+// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+//
+// Example:
+// @linkColor: #ff0000;
+
+.centered_form {
+  width: 845px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.c {
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.individual_alert {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-bottom: -20px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.individual_alert-success {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.45);
+  border: none;
+  background-color: #37923D;
+  background-image: linear-gradient(to bottom, #44CA54 0px, #37923D 45px);
+  padding: 10px 35px 10px 14px;
+}
+
+.individual_alert-notice {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.45);
+  border: none;
+  background-color: #1C5472;
+  background-image: linear-gradient(to bottom, #2F7DA8 0px, #1C5472 45px);
+  padding: 10px 35px 10px 14px;
+}
+
+.individual_alert-error {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.45);
+  border: none;
+  background-color: #913D37;
+  background-image: linear-gradient(to bottom, #C95145 0px, #913D37 45px);
+  padding: 10px 35px 10px 14px;
+}
+
+.individual_alert-info {
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.45);
+  border: none;
+  background-color: #1C5472;
+  background-image: linear-gradient(to bottom, #2F7DA8 0px, #1C5472 45px);
+  padding: 10px 35px 10px 14px;
+}

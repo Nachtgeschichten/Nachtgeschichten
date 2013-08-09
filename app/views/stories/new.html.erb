@@ -1,0 +1,13 @@
+<title>Geschichte schicken</title>
+<h1>Geschichte schicken</h1>
+<div class="centered_form" style="margin-top: 20px;">
+	<p class="c" style="font-size: 18px; margin-bottom: 30px;">Schicke uns deine schr&auml;gste Nachtgeschichte und wir werden sie anonym bei Facebook ver&ouml;ffentlichen!</p>
+	<div class="c">
+	<%= form_for(@story) do |form| %>
+		<%= render 'shared/error_messages', object: form.object %>
+
+		<%= form.text_area :content, class: "field_wide", style: "width: 600px;" %>
+	</div>
+	<center><%= form.submit "Abschicken!", class: "btn btn-large btn-success", style: "margin-top: 10px;" %></center>
+	<% end %>
+</div>
