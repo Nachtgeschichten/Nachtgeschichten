@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class StoriesController < ApplicationController
 before_filter :authenticate, only: :index
 
@@ -12,7 +13,7 @@ before_filter :authenticate, only: :index
 	def create
 		@story = Story.new(params[:story])
 		if @story.save
-			flash[:success] = "Story erfolgreich verschickt! Wir werden sie checken und dann bei Facebook posten!"
+			flash[:success] = "Story erfolgreich verschickt! Wir werden sie überprüfen und dann bei Facebook posten!"
 			redirect_to root_path
 		else
 			render :new
