@@ -13,7 +13,7 @@ before_filter :authenticate, only: :index
 		@story = Story.new(params[:story])
 		if @story.save
 			flash[:success] = "Story erfolgreich verschickt! Wir werden sie checken und dann bei Facebook posten!"
-			redirect_to :back
+			redirect_to root_path
 		else
 			render :new
 		end
@@ -23,7 +23,7 @@ before_filter :authenticate, only: :index
 
 		def authenticate
 		  authenticate_or_request_with_http_basic do |username, password|
-		    username == "kings" && password == "kings"
+		    username == User.first.name && password == User.first.name
 		  end
 		end
 end
